@@ -1,10 +1,10 @@
-"use client";
+'use client'
 
-import { useCompletion } from "ai/react";
+import { useCompletion } from 'ai/react'
 
 export default function Home() {
   const { completion, input, isLoading, handleInputChange, handleSubmit } =
-    useCompletion();
+    useCompletion()
 
   return (
     <main className="m-auto max-w-xl p-4 text-white">
@@ -41,5 +41,5 @@ export default function Home() {
         </form>
       </div>
     </main>
-  );
+  )
 }
