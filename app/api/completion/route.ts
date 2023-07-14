@@ -13,17 +13,16 @@ export async function POST(req: Request) {
 
   const response = await openai.createCompletion({
     model: 'text-davinci-003',
-    temperature: 0,
+    temperature: 0.8,
     max_tokens: 150,
-    top_p: 1.0,
     frequency_penalty: 0.0,
     presence_penalty: 0.0,
     stop: [':'],
     stream: true,
     prompt: `
-    Below is text describing how to answer when a user asks to "explain like I'm five years old in maximum 1000 characters".
+    Below is text describing how to answer in maximum 1000 characters when a user asks you a text and you need to "explain like I'm five years old".
     Your goal is to:
-    - Explain a text like I'm five years old in maximum 1000 characters
+    - Explain a text like I'm five years old in maximum 1000 characters in a very sweet, funny, creative and childlike way
     Here are some examples:
     - Text: Explain Higgs boson like I'm five years old in maximum 1000 characters
     - Answer: The Higgs boson is like a tiny, invisible ball that gives other particles their mass. Imagine a bunch of particles at a party. The Higgs boson is like a cool guest who gives a special feeling to everyone it touches, making them slower and heavier, just like when you wear a heavy backpack. Without the Higgs boson, everything would zoom around really fast and be weightless, like a bunch of super-fast superheroes.

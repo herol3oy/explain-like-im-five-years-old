@@ -1,7 +1,7 @@
 export default function Head() {
   return (
     <>
-      <title>Explain like I&aposm five years old</title>
+      <title>Explain like I&aposm five years old 👶</title>
       <meta
         name="description"
         content="A super smart app that explain topic and terms like we are 5 years old!"
