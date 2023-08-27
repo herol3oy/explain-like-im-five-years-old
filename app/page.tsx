@@ -19,7 +19,7 @@ export default function Home() {
               value={input}
               onChange={handleInputChange}
               type="text"
-              placeholder="Type your question"
+              placeholder="Type a topic. e.g. periodic table, irony, energy, etc."
               className="w-full rounded-md bg-neutral-800 px-2 py-5 outline-none"
               autoFocus
             />
